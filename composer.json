@@ -1,0 +1,25 @@
+{
+	"name": "Evil1991/yii_custom",
+	"description": "Провайдер прокси-серверов",
+	"authors": [
+		{
+			"name": "Konsul117",
+			"email": "konsul117@bk.ru",
+			"role": "Main developer"
+		}
+	],
+	"type": "library",
+	"require": {
+		"php": ">=5.6.0",
+		"yiisoft/yii2-faker": "~2.0.0",
+		"Evil1991/yii_custom": "dev-master",
+		"coderockr/php-query": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {"proxyProvider\\": ""}
+	},
+	"autoload-dev": {
+		"psr-4": {"proxyProvider\\": ""}
+	},
+	"minimum-stability": "dev"
+}
