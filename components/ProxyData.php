@@ -1,6 +1,6 @@
 <?php
 
-namespace proxyProvider\components\proxyProvider;
+namespace proxyProvider\components;
 
 use Faker\Provider\Uuid;
 
