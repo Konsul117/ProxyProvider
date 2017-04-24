@@ -80,7 +80,7 @@ class ProxyProviderPool extends Component {
 
 		//если прокси так и не найден, то берём последний по списку
 		if ($resultProxy === null) {
-			$lastStat = reset($proxyStat);/** @var ProxyStat $lastStat */
+			$lastStat = $proxyStat[array_rand($proxyStat)];/** @var ProxyStat $lastStat */
 
 			$resultProxy = $lastStat->proxy;
 		}
