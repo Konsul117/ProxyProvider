@@ -71,14 +71,14 @@ class ProxyProviderPool extends Component {
 				break;
 			}
 
-			if (($currentStamp->getOffset() - $stat->lastRequestStamp->getOffset()) > 60 * 2) {
+			if (($currentStamp->getTimestamp() - $stat->lastRequestStamp->getTimestamp()) > 60 * 2) {
 				$resultProxy = $stat->proxy;
 
 				break;
 			}
 		}
 
-		//если прокси так и не найден, то берём последний по списку
+		//если прокси так и не найден, то берём первый по списку
 		if ($resultProxy === null) {
 			$lastStat = $proxyStat[array_rand($proxyStat)];/** @var ProxyStat $lastStat */
 
