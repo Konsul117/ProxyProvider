@@ -71,7 +71,7 @@ class ProxyProviderPool extends Component {
 				break;
 			}
 
-			if ($currentStamp->getOffset() - $stat->lastRequestStamp->getOffset() > 60 * 2) {
+			if (($currentStamp->getOffset() - $stat->lastRequestStamp->getOffset()) > 60 * 2) {
 				$resultProxy = $stat->proxy;
 
 				break;
